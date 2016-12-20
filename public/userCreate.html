@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Padder Posting</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="indexstylesheet.css"><!--stylesheet-->
+
+  
+</head>
+
+
+<!--NAV/ SEARCH BAR -->
+<nav class="navbar navbar-inverse">
+<!--<div class="col-lg-3">-->
+<!-- <center> <p><h1>Resume Padder</h1></p></center>--><center>
+<img class="img-responsive" src="resumepadderclear.png" alt="" height="110" width="220" ></center></nav>
+</div>
+
+</nav>
+
+<form class="create-form" action="/users/create" method="POST">
+    <div class="form-group">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="firstName">
+    </div>
+    
+    <div class="form-group">
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+    </div>
+
+    <!--<div class="form-group">
+      <label for="zipCode">Zip Code:</label>
+      <input type="text" id="zipCode" name="zipCode">
+    </div>-->
+
+    <!--<div class="form-group">
+      <label for="interest">Interest</label>
+      <input type="text" id="interest" name="interest">
+    </div>-->
+
+    <div class="form-group">
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" name="password">
+    </div>
+    
+    <div class="modal-footer">
+     <center> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button></center>
+     <center> <button type="submit" class="btn btn-primary">Submit</button></center>
+    </div>
+  </form><!--JQUERY/ JS LINK-->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script> 
+  function errorTest() {
+     var email, x;
+     email = document.getElementById("email");
+     email.innerHTML = "";
+     x = document.getElementById("email").value;
+     try { 
+         if(email == "")  throw "missing";
+     }
+     catch(err) {
+         email.innerHTML = "This field is " + err + ". Please enter your interests";
+     }
+  }
+</script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+
+
+</body>
+</html>

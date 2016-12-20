@@ -1,0 +1,39 @@
+<H2> Welcome {{userFirstName}}  {{userLastName}}<h2>
+<H3> Here are the Volunteer Jobs in {{userzipCode}} </h3>
+<div>
+  {{#each jobs}}
+     <div class="well">
+     <span>
+        <h3> Job Title: {{this.title}} </h3>
+        <h3> Description: {{this.desc}} </h3>
+        <h4> Hours: {{this.hours}} </h4>
+        <h4> Organization: {{this.Organization.OrganizationName}} </h4>
+        <h5> Point of Contact: {{this.Organization.pocPosition}} - {{this.Organization.pocName}} </h5>
+        <h5> Phone Number: {{this.Organization.phoneNumber}}</h5>
+        <h6> Email: {{this.Organization.eMail}} </h6>
+        <p> For more information visit: {{this.Organization.webSite}}</p> 
+            {{!-- {{>allform/sendEmail}}  --}}
+        <div class="row">
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-4">
+            {{!-- <form action="jobs/email/{{this.id}}" method="POST">
+                <input type="hidden" name="email" value={{../userEmail}}>
+                <button type="submit" id="btnSendMail" class="btn btn-default">Send it to my email</button>
+            </form> --}}
+            
+            {{!-- ****trying to use Jquery**** --}}
+
+            <form id={{this.id}}>
+                <input type="hidden" name="email" class={{this.id}} value={{../userEmail}}>
+                <button type="button" class="btnSendMail btn btn-default">Send it to my email</button>
+            </form>
+
+        </div>
+        {{!-- form end --}}
+        </div> 
+        {{!-- row end --}}
+     </span>
+     </div>
+  {{/each}}
+</div>

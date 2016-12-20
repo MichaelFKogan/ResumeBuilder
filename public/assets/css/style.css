@@ -1,0 +1,85 @@
+
+
+body {
+	background-image:url("background.jpg");
+/*	background-size: 100%;
+	background-repeat:no-repeat;*/
+}
+
+
+#header {
+	height:200px;
+	background-image:url("resumepadderclear.png");
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+
+#welcome {
+	height:90px;
+	background-image:url("welcometoclear.png");
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+
+#row1 {
+	height:30px;
+}
+
+#row2 {
+	height:90px;
+}
+
+#row3 {
+	height:200px;
+}
+
+
+#jfkgif {
+	width:100%;
+	height:100%;
+}
+
+#slides2 {
+	border-style:ridge;
+	border-color:white;
+	border-width:5px;
+}
+
+#signin {
+	position:absolute;
+	right:-250px;
+}
+
+#loginbutton{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#firstname, #lastname, #email, #password, #zip, #interest, #pocname, #orgname, #position, #website, #phone {
+	width: 300px;
+}
+
+
+#photo1 {
+	height:600px;
+	background-image:url("volunteer17.jpg");
+	background-size: 100%;
+	background-repeat:no-repeat;
+	margin-top:20px;
+}
+
+#row6 {
+	height:50px;
+}
+
+#photo2 {
+	height:600px;
+	background-image:url("volunteer18.jpg");
+	background-size: 100%;
+	background-repeat:no-repeat;
+	margin-top:20px;
+}
+
+#password1, #loginbutton {
+	margin-left:10px;
+}

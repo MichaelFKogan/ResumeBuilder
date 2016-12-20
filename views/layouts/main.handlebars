@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resume Padder</title>
+
+    <style>
+        .mySlides {display:none;}
+    </style>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/bootstraptheme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+</head>
+	<body>
+		{{{ body }}}
+	</body>
+</HTML>
+
+<script type="text/javascript"> 
+$(document).ready(function() {
+console.log("document ready");
+
+$(".btnSendMail").on("click", function(){
+var currentURL = window.location.origin;
+
+
+console.log($(this).closest('form').attr('id'));
+var formId = $(this).closest('form').attr('id');
+var formEmail = $('.'+formId).val();
+console.log(formEmail);
+
+var eMessage = {
+email:formEmail
+}
+
+$.post(currentURL + '/jobs/email/'+formId, eMessage, function(data,err){
+
+    alert("Email Sent!!");
+})
+
+
+});
+
+
+
+
+});//on document ready
+
+</script>

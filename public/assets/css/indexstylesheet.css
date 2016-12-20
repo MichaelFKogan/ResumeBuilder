@@ -1,0 +1,45 @@
+
+#title{
+	color: #000000;
+}
+
+ navbar-inverse{
+	background-color: #171d22;
+
+}
+
+
+.panel-title{
+	color:#000000;
+	font-size: 25px;
+}
+
+body {
+  background-image: url("background.jpg");
+  font-size: 22px;
+font-weight: 900;
+  line-height: 30px;
+  font-family: 'serif' ;
+  color: #000000;
+}
+
+#title {
+	padding: 20px;
+}
+
+.navbar-form {
+float: auto;
+}
+
+/*.buttonRow{
+	background-color: #171d22;
+}
+
+.panel-heading{
+	background-color: #171d22;
+}
+
+#wikiWell {
+	font-size: 13px;
+	color: black;*/
+}*
