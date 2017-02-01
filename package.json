@@ -1,7 +1,7 @@
 {
-  "name": "resumepadder",
+  "name": "Resume-Builder-MVC",
   "version": "1.0.0",
-  "description": "",
+  "description": "###A site for high school and college students to find part-time jobs, volunteer work, and internship opportunities, that will help build their resumes.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,29 +9,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Senthilselva/resumepadder.git"
+    "url": "git+https://github.com/MichaelFKogan/ResumeBuilder.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Senthilselva/resumepadder/issues"
+    "url": "https://github.com/MichaelFKogan/ResumeBuilder/issues"
   },
-  "homepage": "https://github.com/Senthilselva/resumepadder#readme",
+  "homepage": "https://github.com/MichaelFKogan/ResumeBuilder#readme",
   "dependencies": {
-    "bcryptjs": "^2.3.0",
-    "body-parser": "^1.15.2",
-    "cookie-parser": "^1.4.3",
-    "debug": "^2.3.3",
-    "express": "^4.14.0",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
     "express-handlebars": "^3.0.0",
-    "express-session": "^1.14.2",
-    "method-override": "^2.3.6",
+    "handlebars": "^4.0.6",
+    "jquery": "^3.1.1",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.8.1",
     "morgan": "^1.7.0",
-    "mysql": "^2.12.0",
-    "nodemailer": "^2.6.4",
-    "path": "^0.12.7",
-    "sequelize": "^3.26.0",
-    "serve-favicon": "^2.3.2"
+    "request": "^2.79.0"
   }
 }

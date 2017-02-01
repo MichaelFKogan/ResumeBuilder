@@ -1,34 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resume Builder</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+<!--     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script> -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMMk0XzVRBkHfM4giysNnFkOIUUwWXvuI&libraries=places&language=en&region=US"></script>
+
+</head>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+<body>
+
+
 
 <!-- NAVBAR ================================================= -->
 
-<nav class="navbar navbar-primary navbar-fixed-top" id="navbar">
+<nav class="navbar navbar navbar-fixed-top" id="navbar">
     <div class="container-fluid">
             
-        <div class="navbar-header">
-        
-        <!-- Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="bs-example-navbar-collapse-1" aria-expanded="false" style="border:1px solid #595959;">
-                    <span class="sr-only" >Toggle navigation</span>
-                    <span class="icon-bar" style="background:#595959;"></span>
-                    <span class="icon-bar" style="background:#595959;"></span>
-                    <span class="icon-bar" style="background:#595959;"></span>
-                </button>
-
-            <!-- Brand -->
-                <a class="navbar-brand" href="index.html" id="brand">RESUME BUILDER</a>
+        <div class="navbar-header">     
+            <a href to="/" class="navbar-brand" id="brand">Resume Builder</a>
         </div> 
             
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html" class="navLinks" data-toggle="collapse" data-target=".navbar-collapse">HOME</a></li>
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="Search.html" class="navLinks">SEARCH</a></li>                        
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="PostAJob.html" class="navLinks">POST A JOB</a></li>
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="SignIn.html" class="navLinks">SIGN IN</a></li>
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="CreateAnAccount.html" class="navLinks">CREATE AN ACCOUNT</a></li>
+
+                    <li><a href to="/" class="navLinks">HOME</a></li>
+
+                    <li><a href to="/Search" class="navLinks">SEARCH</a></li>
+                        
+                    <li><a href to="/PostAJob" class="navLinks">POST A JOB</a></li>
+
+                    <li><a href to="/SignIn" class="navLinks">SIGN IN</a></li>
+
+                    <li><a href to="/CreateAnAccount" class="navLinks">CREATE AN ACCOUNT</a></li>
                
                 </ul>
-
             </div>
 
     </div> 
@@ -37,30 +56,19 @@
  <!-- NAVBAR ================================================= -->
 
 
- <!-- HOMEPAGE ================================================= -->
+ <!-- HOMEPAGE} ================================================= -->
 <div class="container">
 
 <div class="jumbotron row">
-
-    <div class="row text-center"> 
-        <div id="titleOne">Welcome to </div>
-        <div id="titleTwo"> Resume Builder</div>
-        <br>
-        <div id="subtitle">A place for students to gain work experience. </div>
-    </div>
-
-
 
 <div class="row text-center center-block">
 
         <br/>
 
-
-<!-- ================== SEARCH FORM ============================ -->
-    <form
-        action="/" 
-        method="POST"  
+    <form 
         class="create-form" 
+        action="/" 
+        method="POST" 
         id="searchForm" >
 
         <div id="jobSearchDiv">
@@ -99,7 +107,6 @@
         </button>
 
     </form>
-<!-- ================== SEARCH FORM ============================ -->
 
         <p id="message1"><b>Not registered? </b> 
         <a href to="/CreateAnAccount">Create an account</a></p>
@@ -118,3 +125,12 @@
 <footer class="footer text-center"><p>Copyright @ 2017 Resume Builder</p></footer>
 
  <!-- HOMEPAGE} ================================================= -->
+
+<script type="text/javascript" src="assets/js/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+
+
+</body>
+
+</html>
