@@ -261,6 +261,7 @@ body, html, main {
 font-family: 'Playfair Display', serif; 
 margin:4px;
 /*padding-left: 25px;*/
+  font-size:12px;
 }
 
 .jobTitle{font-size:16px;}
@@ -297,12 +298,35 @@ margin-bottom: 15px;
 .footer{
     height:75px;
     width:100%;
-    background: rgba(238, 238, 238, .92);
-    margin-top: 131px;
+    background: rgba(238, 238, 238, .98);
+    /*margin-top: 131px;*/
     padding-top: 30px;
     min-width:720px;
     position:relative;
     bottom:0;
+    display: inline-block;
+    border-radius:6px;
+}
+
+
+#searchResultsBoxResults{
+  background: rgba(255, 255, 255, 1);
+  height: auto; 
+  min-width:500px;
+  max-width:500px; 
+  margin-top:70px;
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:4px;
+ /* border:1px solid black;*/
+
+  padding:30px;
+  padding-top:15px;
+  padding-bottom:0px;
+  overflow:auto;
+
+  display:inline-block;
 }
 
 

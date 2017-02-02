@@ -21,11 +21,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html" class="navLinks" data-toggle="collapse" data-target=".navbar-collapse">HOME</a></li>
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="Search.html" class="navLinks">SEARCH</a></li>                        
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="PostAJob.html" class="navLinks">POST A JOB</a></li>
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="SignIn.html" class="navLinks">SIGN IN</a></li>
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="CreateAnAccount.html" class="navLinks">CREATE AN ACCOUNT</a></li>
+                    <li><a href="#" class="navLinks" data-toggle="collapse" data-target=".navbar-collapse">HOME</a></li>                        
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#" class="navLinks">POST A JOB</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#" class="navLinks">SIGN IN</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#" class="navLinks">CREATE AN ACCOUNT</a></li>
                
                 </ul>
 
@@ -38,7 +37,7 @@
 
 
  <!-- HOMEPAGE ================================================= -->
-<div class="container">
+<div class="container-fluid">
 
 <div class="jumbotron row">
 
@@ -110,11 +109,47 @@
         <p id="message3"><b>Already a member? </b>
         <a href to="/SignIn">Log In</a></p>
 
+<!-- ================== SEARCH FORM ============================ -->
+
+<!-- ================== RESULTS ================================ -->
+    <div class="container-fluid center-block text-center" id="containerForResults">
+
+        <div class="row ">
+    
+            <div class="text-left" id="searchResultsBoxResults">
+
+            <div class="row">{{#each placeholder}}
+                <span class="companyLocation" style="font-size:12px;">{{formattedLocation}}</span>
+                <p class="jobTitle" style="font-size:12px;">
+                <strong><a href={{url}} target="_blank">{{jobtitle}}</a></strong></p>
+            </div>
+            <div class="row">    
+                <p class="date" style="font-size:12px;">{{date}}</p> 
+                {{!-- date.split("", 12) --}}
+                <p class="companyName" style="font-size:12px;"><strong>{{company}}</strong></p>
+            </div>
+            <div class="row">
+{{!--                <button onClick="" className=" btn btn-default btn-xs saveButton">Save</button>   --}}
+                <p class="snippet" style="font-size:12px;">{{snippet}}</p> {{/each}}
+            </div>
+            {{!-- <hr class="hrResults"/> --}}
+        </div>  {{!-- END SEARCHRESULTSBOXRESULTS --}} 
+    
+    </div>  {{!-- END ROW --}} 
+
+    <br/> <br/> 
+
+<div class="row">
+<footer class="footer text-center"><p  style="font-size:12px; width:100%;">Copyright @ 2017 Resume Builder</p></footer>
+</div>
+
+</div>  {{!-- END CONTAINER --}} 
+
 
         </div> <!-- END ROW -->
     </div> <!-- END JUMBOTRON ROW -->
 </div> <!-- END CONTAINER -->
 
-<footer class="footer text-center"><p>Copyright @ 2017 Resume Builder</p></footer>
+{{!-- {{> search}} --}}
 
  <!-- HOMEPAGE} ================================================= -->

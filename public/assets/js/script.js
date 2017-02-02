@@ -4,7 +4,7 @@ $(document).ready(function(){
 // SEARCH BUTTON ON CLICK EVENT
 // ============================================
 $('#searchButton').on('click', function() {
-    event.preventDefault();
+    // event.preventDefault();
     var userData = "";
     var keyword = "";
     var location = "";
@@ -16,14 +16,18 @@ $('#searchButton').on('click', function() {
     console.log(userData);
     // AJAX post the data to the server. 
     var currentURL = window.location.origin;
-    console.log(currentURL)
-    // $.post(currentURL + "/", userData, function(data){
-    // console.log(data);
+    
+    $.post(currentURL + "/search", userData, function(data){
 
-    // }); // END $.post "/search"
+    }); // END $.post "/search"
 
-    $('#keyword').val("");
-    $('#location').val("");
+      $.getJSON("/search", function(data) {
+
+        console.log(data);
+      });
+
+    // $('#keyword').val("");
+    // $('#location').val("");
 }) // END #searchButton.on('click'
 // ============================================
 
@@ -64,7 +68,7 @@ $(".navbar-toggle").click(function(event) {
 }
 }
 
-   // google.maps.event.addDomListener(window, 'load', initialize);
+   google.maps.event.addDomListener(window, 'load', initialize);
 
 // GOOGLE PLACES AUTOCOMPLETE
 // ============================================
